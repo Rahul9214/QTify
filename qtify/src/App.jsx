@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 // import React, { component } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
@@ -94,7 +94,7 @@ function App() {
       <div>
         <Navbar />
         <Hero />
-        <div className="sectionWrapper"> 
+        <div className={styles.sectionWrapper}> 
            <Section data = {topAlbumData} title="Top Albums" type="album" /> 
            <Section data = {newAlbumData} title="New Albums" type="album" />
            <FilterSection data = {newAlbumData} title="Songs" type="songFilter" filteredData={filteredData}
